@@ -39,5 +39,5 @@ data "aws_ami" "join_devops" {
 }
 
 data "aws_ssm_parameter" "database_subnet_ids" {
-    name="/${var.Project}/${var.Environment}/database_subnet_ids"
+    name="/${var.Project}/${var.Environment}/database_subnets"
 }

@@ -7,3 +7,4 @@ resource "aws_route53_record" "creating_roboshop_db_route53_records" {
   records =[each.value.private_ip]
 
 }
+

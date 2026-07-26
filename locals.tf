@@ -21,7 +21,7 @@ locals {
   mysql_sg_id= data.aws_ssm_parameter.mysql_sg_id.value
   rabbitmq_sg_id=data.aws_ssm_parameter.rabbitmq_sg_id.value
   ami=data.aws_ami.join_devops.id
-  database_subnet_id=split(",",data.aws_ssm_parameter.database_subnets.value)[0]
+  database_subnet_id=split(",",data.aws_ssm_parameter.database_subnet_ids.value)[0]
 }
 
 locals {

@@ -30,7 +30,7 @@ resource "terraform_data" "boostrap-databases" {
 
 
     provisioner "file" {
-        source="${path.module}/scripts/${locaal.databases[each.key].script}"
+        source="${path.module}/scripts/${local.databases[each.key].script}"
         destination = "/tmp/bootstrap.sh"
       
     }

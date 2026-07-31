@@ -2,19 +2,19 @@ locals {
   databases={
     mongodb={
         sg_id= local.mongodb_sg_id
-        script= mongodb-bootstrap.sh
+        script= "mongodb-bootstrap.sh"
     }
     redis={
         sg_id= local.redis_sg_id
-        script=redis-bootstrap.sh
+        script="redis-bootstrap.sh"
     }
     mysql={
         sg_id= local.mysql_sg_id
-        script=mysql-bootstrap.sh
+        script="mysql-bootstrap.sh"
     }
     rabbitmq={
         sg_id= local.rabbitmq_sg_id
-        script=rabbitmq-bootstrap.sh
+        script="rabbitmq-bootstrap.sh"
     }
   }
 }

@@ -8,7 +8,7 @@ chmod -R 755 /var/log/roboshop/
 touch /var/log/roboshop/ansible.log
 
 cd /home/ec2-user
-git clone https://github.com/pavanisai2828/roboshop-anisble-v3.git
+git clone https://github.com/pavanisai2828/ansible-roboshop-v3.git
 cd ansible-roboshop-v3
 git pull
 

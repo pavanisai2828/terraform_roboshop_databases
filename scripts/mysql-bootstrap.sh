@@ -2,6 +2,7 @@
 component=$1
 environment=$2
 dnf install ansible -y
+dnf install ansible python3-boto3 python3-botocore -y
 mkdir -p /var/log/roboshop/
 chown -R ec2-user:ec2-user /var/log/roboshop/
 chmod -R 755 /var/log/roboshop/

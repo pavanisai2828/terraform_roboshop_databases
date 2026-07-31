@@ -15,7 +15,7 @@ resource "aws_ssm_parameter" "storing_roboshop_dev_db_dns" {
 }
 
 resource "aws_ssm_parameter" "mysql_password" {
-    name="/${var.Project}/${var.Environment}/${each.key}/mysql_root_password"
+    name="/${var.Project}/${var.Environment}/mysql_root_password"
     type = "SecureString"
     value = var.mysql_root_password
     

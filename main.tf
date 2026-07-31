@@ -22,7 +22,7 @@ resource "terraform_data" "boostrap-databases" {
 
     connection {
         type ="ssh"
-        user = "ec-user"
+        user = "ec2-user"
         password="DevOps321"
         host= each.value.private_ip
       

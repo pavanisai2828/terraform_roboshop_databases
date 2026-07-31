@@ -29,3 +29,7 @@ variable "domain_name" {
     default = "daws-90.online"
   
 }
+
+variable "mysql_root_password" {
+   type = string
+}

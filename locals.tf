@@ -36,3 +36,7 @@ locals {
     Terraform=true
   }
 }
+
+locals {
+  region="us-east-1"
+}

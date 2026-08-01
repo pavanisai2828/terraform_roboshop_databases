@@ -4,6 +4,7 @@ resource "aws_instance" "creating_roboshop_db_instances" {
     instance_type = var.instance_type
     vpc_security_group_ids = [each.value.sg_id]
     subnet_id = local.database_subnet_id
+    iam_instance_profile = each.key == "mysql" ? aws_iam_instance_profile.mysql.name : null
     tags=merge(
         {
             Name="${local.common_name}-${each.key}"
